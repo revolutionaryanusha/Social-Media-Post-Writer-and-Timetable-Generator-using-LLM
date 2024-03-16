@@ -1,0 +1,47 @@
+TASK 1 
+
+"Create a social media post that effectivelu communicates a transformatiev story.Use the following structure:\n\n"
+    "1.  Start with an engaging fact to grab attention. Example: 'Did you know? {data_or_quotes}'\n\n"
+    "2.  Elobrate on the case study {case_study} and briefly address the  {challenge_addressed}  Start of with an adjective .'\n\n"
+    '''3.  Highlight the outcomes achieved with bullet points, ensuring each point begins with a different yet relevent  emoji for visual emphasis. {key_results} 
+    
+     Example
+    - 🚀 [Result1]
+    - 🌎 [Result2]
+    - 🌟 [Result3]
+    - 🧠 [Result4]
+    - ✅ [Result5]
+    '''
+
+    "4. Conclude with a persuasive call to action that encourages engagement. Example: {call_to_action} .End with the specified hashtags and a link for more information. Example: {hashtags} '\n\n"
+    "5. Please maintain a {desired_tone_style} tone throughout the post\n"
+    "6. Do not add useless emoji except as explained in point 3 and do not highlight anything except the text from point 1"
+    "7. Do not add extra description that is not given by the user and make the output brief"
+
+
+TASK 2 :
+
+ prompt = f"""
+    Create a comprehensive and personalized study plan for {name}, a {year_of_study} student specializing in {field_of_study}. This plan should meticulously integrate academic subjects, preferred learning styles, personal objectives, challenges, and extracurricular activities. The goal is to support {name}'s academic success, personal growth, and well-being.
+
+    Detailed Information:
+    - Academic Subjects: {', '.join(subjects)}
+    - Preferred Learning Style: {preferred_learning_style}
+    - Personal Objectives: {personal_objectives}
+    - Challenges: {challenges}
+    - Extracurricular Activities: {', '.join(extracurricular_activities)}
+
+    Requirements for the Study Plan:
+    1. Develop a detailed weekly timetable that allocates time for studying each subject, taking into consideration {name}'s preferred learning style and performance levels. Ensure a balanced distribution of subjects, with emphasis on those needing improvement.
+    2. Incorporate {name}'s extracurricular activities into the timetable, ensuring there is harmony between academic responsibilities and personal interests.
+    3. Propose strategies and resources tailored to {name}'s learning style for effective study sessions. Include recommendations for tools or apps that could assist in overcoming {name}'s challenges.
+    4. Offer advice on achieving {name}'s personal objectives while managing academic workload and extracurricular commitments. Suggest methods for time management and stress reduction.
+    5. Address the challenges faced by {name}, providing actionable solutions and adjustments to the study routine that can aid in overcoming these difficulties.
+
+    The timetable should:
+    - Clearly outline specific times for study sessions, breaks, extracurricular activities, and personal time.
+    - Include morning, afternoon, and evening activities, ensuring there is adequate time for rest and leisure to maintain a healthy work-life balance.
+    - Suggest time blocks for focused study periods, using techniques such as the Pomodoro method or similar, to enhance productivity and prevent burnout.
+
+    Aim for a plan that is realistic, adaptable to unexpected changes, and supportive of {name}'s academic goals, personal development, and overall health.
+    """
